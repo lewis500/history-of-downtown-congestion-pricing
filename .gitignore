@@ -1,3 +1,12 @@
 output/
 .DS_Store
 papers/
+*.blg
+*.bbl
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.pdf
+*.spl
+*.synctex.gz
