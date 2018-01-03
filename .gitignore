@@ -10,3 +10,4 @@ papers/
 *.pdf
 *.spl
 *.synctex.gz
+node_modules/

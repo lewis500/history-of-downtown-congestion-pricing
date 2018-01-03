@@ -1,10 +1,10 @@
-
 \section{Singapore --- Electronic Road Pricing (ERP)}
 
 \subsection{History}
 
-While cheap to administer, a manual system such as the Area License Scheme becomes intractable if authorities want to price precisely. For example, \citet[p. 4]{Chin2010} describes ALS once multiple charging periods and vehicle classes had been added: ``There were 16 different types of licences in use at its peak, and much concentration by the enforcement officers was required to ensure that they identified them correctly.''
-To gain precision with less difficulty, in the early 1990s, Singapore solicited bids for an electronic system. The government chose a smart card/IU system like the one trialed in Cambridge, rather than a transponder system like the Hong Kong ERP, partly to alleviate privacy concerns \citep{PhangToh1997,Chin2010}. After extensive field trials and publicity, the electronic system---called, like Hong Kong's Electronic Road Pricing (ERP)---commenced operation in September 1998.
+Over time, ALS became hard to administer as Singaporean authorities tried to price vehicles more precisely. \citet[p. 4]{Chin2010} describes ALS once multiple charging periods and vehicle classes had been added: ``There were 16 different types of licences in use at its peak, and much concentration by the enforcement officers was required to ensure that they identified them correctly.'' The sticker system also precluded charging vehicles for each entry, and made it impossible to introduce more than two charging periods.
+
+Therefore, in 1989 Singapore solicited bids for a wireless system which would be called, like Hong Kong's, Electronic Road Pricing (ERP). The government was wary of the privacy concerns that had helped sink Hong Kong's ERP \citep{PhangToh1997,Chin2010}. Thus, rather than a tag-and-beacon system, they chose a ``smart card'' system with a different direction of information flow: instead of having roadside beacons identify which cars pass, instead the beacon tells a device on the vehicle to deduct money from a stored-value car---similar to RFID cards used for transit today. In 1995, the contract for the system was awarded to a contract led by Phillips Singapore, and after extensive field trials and publicity, ERP commenced operation on September 1st, 1998.
 
 \subsection{Design}
 
@@ -40,7 +40,7 @@ To gain precision with less difficulty, in the early 1990s, Singapore solicited 
 	\label{tab:passenger-car-units}
 \end{table}
 
-ERP varies tolls substantially by time-of-day. Figure \ref{fig:singapore-toll-schedule} illustrates a weekday toll schedule for the CBD cordon. For the first five years of ERP, tolls changed only at half-hour intervals. But since February 2003, whenever tolls change by more than S\$1, there is a five-minute interval in which tolls rise or fall by half the amount of the change, in order to discourage cars from slowing down or speeding up when tolls are about to change \citep{Menon2004}. The Land Transport Authority (LTA) of Singapore updates prices quarterly to maintain speeds of 45-65kph on expressways and 20-30 kph on roads in the RZ, because the LTA believes these speeds maximize flow \citep{Li1999}.
+ERP varies tolls substantially by time-of-day. Figure \ref{fig:singapore-toll-schedule} illustrates a weekday toll schedule for the CBD cordon. For the first five years of ERP, tolls changed only at half-hour intervals. But since February 2003, whenever tolls change by more than S\$1, there is a five-minute interval in which tolls rise or fall by half the amount of the change, in order to discourage cars from slowing down or speeding up when tolls are about to change \citep{Menon2004}. The Land Transport Authority (LTA) updates prices quarterly to maintain speeds of 45-65kph on expressways and 20-30 kph on roads in the RZ, because the LTA believes these speeds maximize flow \citep{Li1999}.
 	
 \begin{figure}
 	\includegraphics[width=4in]{../img/singapore-IUs.jpg}
@@ -56,12 +56,12 @@ ERP varies tolls substantially by time-of-day. Figure \ref{fig:singapore-toll-sc
 
 
 \begin{figure}
-	\includegraphics[width=5in]{../img/singapore-prices.png}
+	\includegraphics[width=1\textwidth]{../img/singapore-prices.png}
 	\caption{Singapore prices for different years. The schedule becomes more variable as years pass. }
 	\label{fig:singapore-toll-schedule}
 \end{figure}
 
-The substantial changes to the design of ERP have been spatial. ERP started in 1998 with 33 gantries that approximately reproduced the ALS cordon. Beginning in 1999, the LTA added gantries gradually to enclose the first cordon in a second ``Outer Cordon'' \citep{Chin2010}. In 2005, a shopping area on the border of the CBD Cordon became a sub-cordon called the Orchard Road Cordon, because shops open later than offices. The same year, gantries were added to charge outbound trips in the evening on one expressway. Finally, in 2008 a line of gantries was planted down the middle of the CBD Cordon. These operate only between 6 and 8PM, when intra-CBD congestion would otherwise be severe. By December 2014, ERP made use of 80 gantries \citep[p. 406]{Chu2015}.
+The substantial changes to ERP have been spatial. ERP started in 1998 with 33 gantries that approximately reproduced the ALS cordon. Beginning in 1999, the LTA added gantries gradually to enclose the first cordon in a second ``Outer Cordon'' \citep{Chin2010}. In 2005, a shopping area on the border of the CBD Cordon became a sub-cordon called the Orchard Road Cordon, and gantries were added to charge outbound trips in the evening on one expressway. In 2008 a line of gantries, operational from 6-8 PM was planted down the middle of the CBD Cordon. By December 2014, ERP made use of 80 tolling sites \citep[p. 406]{Chu2015}.
 
 \subsection{Results}
 
@@ -69,6 +69,7 @@ The transition to ERP was not as thoroughly documented as the launch of ALS. One
 
 \subsection{Finances}
 
-ERP is unique among downtown pricing schemes in that its role as a source of revenue is negligible; the entire system is designed for congestion control, as government officials emphasize \citep{Chin2010}. Whereas the Area License Scheme and related Road Pricing Scheme together earned S\$9.3 million per month prior to the switch, ERP earned only S\$5.8 million per month, because ERP tolls were lower than an ALS license \citep[p. 34]{Goh2002}. Singapore does not regularly report revenues, but they were S\$159 million \citep{Chen2012}. ERP revenue is not hypothecated.
+Implementation cost S\$197 million in 1998, of which S\$100 million paid for IU's (since the launch this expensive is incurred by the vehicle owner) and S\$97 million to build out the infrastructure \citep{Santos2004}. Annual operating costs have measured about 20-30 percent of revenues \citep{Chin2010}.
 
-Implementation cost S\$197 million in 1998, of which S\$100 million paid for IU's (at a cost of S\$150 each) and S\$97 million to build out the infrastructure (e.g., to buy the gantries) \citep{Santos2004}. Annual operating costs have measured about 20-30 percent of revenues \citep{Chin2010}.
+ERP revenues in 1999 were S\$68 million---down a third from the S\$100 million earned by ALS and the Road Pricing Scheme in 1998 \citep[p. 34]{Goh2002}. Revenues fell because ERP prices were lower than the ALS charge, which, combined with the significant investment cost and higher operating cost, makes it clear that the switch to ERP was not motivated by revenue concerns. Singapore does not regularly report revenues, but they were S\$159 million \citep{Chen2012}. Revenue is not hypothecated but rather flows into the governent's general fund.
+
