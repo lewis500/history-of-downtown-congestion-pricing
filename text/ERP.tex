@@ -1,6 +1,6 @@
-\section{Singapore --- Electronic Road Pricing (ERP)}
+\section{Singapore --- Electronic Road Pricing (ERP)}\label{sec:erp}
 
-\subsection{History}
+\subsection{Implementation}
 
 Over time, ALS became hard to administer as Singaporean authorities priced vehicles more precisely. \citet[p. 4]{Chin2009} describes ALS once multiple charging periods and vehicle classes had been added: ``There were 16 different types of licences in use at its peak, and much concentration by the enforcement officers was required to ensure that they identified them correctly.'' The license system also precluded charging for each entry or varying prices in small time increments.
 
@@ -11,7 +11,7 @@ Therefore, in 1990 Singapore solicited bids for a wireless system which would be
 \citet{Menon2004} describes ERP as having three components.
 
 \begin{itemize}
-\item In-vehicle Unit (IU), an electronic device that sits on vehicles' dashboards or handlebars. The IU has a slot for a ``CashCard'' that the user can load up with money at various establishments---similar to transit touch cards in wide use today. Since March 2015, a sevice called vCashCard allows drivers to pay with debit or credit without having a physical CashCard in the IU. (http://www.straitstimes.com/singapore/transport/virtual-cashcard-aims-to-solve-erp-woes) There are IU's for each of six vehicle classes (see Figure \ref{fig:singapore-IUs}), because the toll charged to a vehicle is a multiple of its ``Passenger Car Unit'' (PCU), an index of size (see Table \ref{tab:passenger-car-units}). 
+\item In-vehicle Unit (IU), an electronic device that sits on vehicles' dashboards or handlebars. The IU has a slot for a ``CashCard'' that the user can load up with money at various establishments---similar to transit touch cards in wide use today. Since March 2015, a sevice called vCashCard allows drivers to pay with debit or credit without having a physical CashCard in the IU. (http://www.straitstimes.com/singapore/transport/virtual-cashcard-aims-to-solve-erp-woes) There are IU's for each of six vehicle classes (see Figure \ref{fig:singapore-IUs}), because the toll charged to a vehicle is a multiple of its ``Passenger Car Unit'' (PCU), an index of size (see Table \ref{tab:passenger-car-units}). Since 2015, the IU is also used to levy charges at public car parks.
 
 \item Gantries, metal archways positioned in pairs over the road at tolling sites. When a vehicle passes below, the first gantry tells the vehicle's IU to charge appropriately. An optical sensor on the second gantry confirms the vehicle type matches the IU. In the event of a transaction error, a camera on the first gantry captures the rear number plate. 
 
@@ -48,25 +48,20 @@ Tolls vary substantially over the day. Figure \ref{fig:singapore-toll-schedule} 
 	\label{fig:singapore-IUs}
 \end{figure}
 
-% \begin{figure}
-% 	\includegraphics[width=4in]{../img/singapore-gantry.jpeg}
-% 	\caption{ERP gantry \citep{LTA2016}}
-% 	\label{fig:singapore-gantry}
-% \end{figure}
-
-
 \begin{figure}
 	\includegraphics[width=1\textwidth]{../img/singapore-prices.png}
 	\caption{Singapore prices for different years. The schedule becomes more variable as years pass. }
 	\label{fig:singapore-toll-schedule}
 \end{figure}
 
-The substantial changes to ERP have been spatial \citep{Chin2009,LTA2018}. ERP started in 1998 with 33 tolling sites replacing the extant ALS and Road Pricing Scheme tolling sites. Since then, the scheme has been greatly expanded. The DCP element of the scheme consists of 39  tolling sites enclosing three contiguous sub-cordons in the CBD. One, the Orchard Road Cordon, contains shopping areas and is thus unpriced on weekday mornings. The other two---the Bugis-Marina Centre Cordon and the Shenton Way-Chinatown Cordon---contain offices and thus operate all day during the weekdays. In the morning, traveling between these two sub-cordons is free---effectively making a single CBD cordon---but there is a small charge to do so between 6 and 8 PM, in order to limit intra-CBD congestion. There are also 54 tolling sites further out from the CBD to control traffic on expressways and arterials. 
+The substantial changes to ERP have been spatial \citep{Chin2009,LTA2018}. ERP started in 1998 with 33 tolling sites replacing the extant ALS and Road Pricing Scheme tolling sites. Since then, the scheme has been greatly expanded. Today, 39  tolling sites enclose three contiguous sub-cordons in the CBD. One, the Orchard Road Cordon, contains shopping areas and is thus unpriced on weekday mornings. The other two---the Bugis-Marina Centre Cordon and the Shenton Way-Chinatown Cordon---contain offices and thus operate all day during the weekdays. In the morning, traveling between these two sub-cordons is free---effectively making a single CBD cordon---but there is a small charge to do so between 6 and 8 PM, in order to limit intra-CBD congestion. There are also 54 tolling sites further out from the CBD to control traffic on expressways and particular roads. 
 % \footnote{https://www.onemotoring.com.sg/content/onemotoring/en/on\_the\_roads/ERP_Rates/\_jcr\_content/main\_par/expandcollapse\_935498777/par/expandcollapse/par/download/file.res/Cars\%20-\%206\%20Nov\%202017.pdf}
 
 \subsection{Results}
 
-The transition to ERP was not as thoroughly documented as the launch of ALS. One significant effect is that entries to the CBD fell by about 15\%, largely due to a decline in repeat trips by the same vehicle \citep{Menon2000}. Since ALS permitted unlimited same-day entries, under ALS about 23\% of trips had been repeat trips---e.g., office workers using cars for lunches and meetings in the middle of the day \citep[p. 23]{Chin2009}. \citet{Olszewski2005} conclude, using data from before and after ERP, that the LTA's charging structure has done a good job controlling congestion and spreading traffic flow over the peaks.
+The transition to ERP was not as thoroughly documented as the launch of ALS. One significant effect is that entries to the CBD fell by about 15\%, largely due to a decline in repeat trips by the same vehicle \citep{Menon2000}. Since ALS permitted unlimited same-day entries, under ALS about 23\% of trips had been repeat trips---e.g., office workers using cars for lunches and meetings in the middle of the day \citep[p. 23]{Chin2009}. \citet{Olszewski2005} 
+
+There are no exemptions to ERP, so it cannot provide evidence of Theme I. Moreoever, in contradiction to Theme II, \citet{Olszewski2005} conclude, using data from before and after ERP, that the LTA's charging structure has done a good job controlling demand by spreading traffic over the peaks. \citet[p. 45]{Borjesson2018} cite Singapore as a case where drivers are sensitive to further changes in the price structure.
 
 \subsection{Finances}
 

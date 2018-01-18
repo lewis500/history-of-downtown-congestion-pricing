@@ -1,55 +1,51 @@
-\section{Gothenburg --- Gothenburg Congestion Tax}
+\section{Gothenburg --- Gothenburg Congestion Tax}\label{sec:gothenburg}
 
-\subsection{History}
+\subsection{Implementation}
 
-The genesis of Gothenburg's pricing system lies in the above-mentioned infrastructure agreement between Stockholm and the national government. Previously, most infrastructure projects in Sweden were funded nationally, but the agreement demonstrated a local/national co-financing model that proved attractive in an era of restricted budgets \citep{Borjesson2015,Hysing2015b}. In 2008 the government directed the national infrastructure administrations to prioritize such co-financing when selecting projects for the 2010-2021 transport investment plan. When a draft of the plan came out in spring 2009, leaders from the Gothenburg region lamented that many of their high-priority projects had been left out, and embarked on negotiations with national officials about co-financing these projects. The negotiations proceed quickly, and in October 2009 the Gothenburg City Council ratified the ``West Swedish Agreement,'' whereby 17 billion SEK in local funds---including 14 billion from road pricing---would be matched one-for-one by national funds. The Agreement included a 20 billion SEK rail tunnel (the ``Western Link''), a road tunnel, bus lanes and a multi-modal bridge. 
+The genesis of Gothenburg's pricing system lies in the above-mentioned infrastructure agreement between Stockholm and the national government. Previously, most infrastructure projects in Sweden were funded nationally, but the agreement demonstrated a local/national co-financing model \citep{Borjesson2015,Hysing2015b}. In 2008 the government directed the infrastructure administration to prioritize such co-financing when selecting projects for the 2010-2021 transport investment plan. When a draft of the plan came out in spring 2009, leaders from the Gothenburg region lamented that many of their high-priority projects had been left out, and embarked on negotiations with national officials about co-financing these projects. The negotiations proceeded quickly, and in October 2009 the Gothenburg City Council ratified the ``West Swedish Agreement,'' whereby 17 billion SEK in local funds---including 14 billion from road pricing---would be matched one-for-one by national funds.\footnote{http://www.vastsvenskapaketet.se/english/} The Agreement included a 20 billion SEK rail tunnel (the ``Western Link''), a road tunnel, bus lanes and a multi-modal bridge. 
 
-Unlike the protracted process behind the Stockholm Congestion tax, the selection of projects and the design of the road pricing scheme were both rushed, so that the projects could be included in the national investment plan that Parliament passed in April 2010. This provoked controversy, and in the September 2010 elections, voters gave several seats on the Gothenburg City Council to a new party, Vägvalet (``Road Selection''), whose sole issue was opposition to road pricing. In 2012, a public petition drive led the council to  place a on-binding referendum on the coming charges on the 2014 election ballot. Nevertheless, the Council pressed ahead, and the Gothenburg Congestion Tax (GCT) launched on January 1st, 2013 with a design copied from the SCT.
-
-In September 2014, the referendum result showed 57\% of votes cast were against continuing the charge, but since the referendum was only consultative, the Council decided to keep the Tax in order to fulfill Gothenburg's end of the West Swedish Agreement. This motive has been well illustrated by the decision to increase tolls in January 2015 after early revenues fell short of projections.
+Unlike the protracted process behind the Stockholm Congestion tax, the selection of projects and the design of the road pricing scheme were both rushed, so that the projects could be included in the national investment plan that Parliament passed in April 2010. This provoked controversy, and in the September 2010 elections, voters gave several seats on the Gothenburg City Council to a new party, Vägvalet (``Road Selection''), whose sole issue was opposition to road pricing. In 2012, a public petition drive led the council to  place a on-binding referendum on the coming charges on the 2014 election ballot. Nevertheless, the Council pressed ahead, and the Gothenburg Congestion Tax (GCT) launched on January 1st, 2013 with a design copied from the SCT. In September 2014, the referendum result showed 57\% of votes cast were against continuing the charge, but since the referendum was only consultative, the Council decided to keep the Tax in order to fulfill Gothenburg's end of the West Swedish Agreement. This motive has been well illustrated by the decision to increase tolls in January 2015 after early revenues fell short of projections.
 
 \subsection{Design}
 
-Gothenburg's scheme closely resembles Stockholm's: cameras identify drivers crossing tolling sites in either direction, and tolls vary by time-of-day. Figure XXX shows the tolling schedule before and after the 2015 increase. There is a daily maximum charge of 60 SEK, and the same vehicles are exempt as in Stockholm. The ``single charge'' or  ``multi-passage'' rule declares that, no matter how many tolling sites a vehicle crosses within 60 minutes, it is charged only once, with the toll being the highest among the possible charges. Figure \ref{fig:Gothenburg-map} shows the tolling sites form a cordon around downtown Gothenburg, but there are also sites at the \"Alvsborg Bridge (toll site \#11) and along a highway north of the city where congestion would otherwise be severe. 
+Gothenburg's scheme uses the same technology and design as Stockholm's: cameras identify drivers crossing tolling sites in either direction, and tolls vary by time-of-day. Figure \ref{fig:gothenburg-prices} shows the tolling schedule in place today, which is somewhat larger than the original schedule. There is a daily maximum charge of 60 SEK, and the same vehicles are exempt as in Stockholm. Figure \ref{fig:Gothenburg-map} shows the tolling sites form a cordon around downtown Gothenburg, but there are also sites at the \"Alvsborg Bridge (toll site \#11) and along a highway north of the city where congestion would otherwise be severe. Note that more tolling sites are required for Gothenburg than for Stockholm owing to the lack of water boundaries.
+
+Gothenburg has the same exemptions has Stockholm, and the Tax is turned off in July. One feature unique to Gothenburg's scheme is the ``single charge'' or  ``multi-passage'' rule: no matter how many tolling sites a vehicle crosses within 60 minutes, it is charged only once, with the toll being the highest among the possible charges. 
 
 \begin{figure}[ht]
 \includegraphics[width=0.7\textwidth]{../img/gburg-map.png}
-
 \caption{Gothenburg Congestion Tax zone \citep{transportstyrelsen2015}\label{fig:Gothenburg-map}}
+\end{figure}
+
+\begin{figure}
+    \includegraphics[width=0.8\textwidth]{../img/gothenburg-prices.png}
+    \caption{Gothenburg price structure } 
+    \label{fig:gothenburg-prices}
 \end{figure}
 
 \subsection{Results}
 
-The effects in Gothenburg were similar to but milder than those observed in Stockholm. Traffic over the cordon during the charged hours fell 12\%, rather than the 15\% forecast by models \citep{Borjesson2015}. The discrepancy was largest during the peaks: whereas models had predicted peak travel would fall 18\%, it fell only 13\%---approximately the same reduction observed for off-peak traffic. Travel surveys show that commuters switched to public transport, while discretionary travelers traveled less frequently or switched destinations. Accounting for external factors, the charge is estimated to have raised public transport ridership by about 4.5-6.5\%. As for congestion, Figure \ref{fig:Gothenburg-travel-times} shows travel times in Gothenburg for different classes of road from before and after the charge. Likewise, in Stockholm commuters switched to public transport, public transport ridership rose by about 5\%, discretionary travelers canceled trips, peak and off-peak traffic fell by similar amounts and travel time reductions were strongest on inner arterial roads.
+Between 2012 and 2013, cordon crossings during charging hours fell 12\%, rather than the 15\% forecast by models \citep{Borjesson2015}. Although peak crossings were expected to fall more than off-peak, due to the higher charges, in fact both fell by about 12-13\%. (Recall that Stockholm also surprised observers by showing the same reduction in the peak and off-peak.) Entries have been stable since enactment \citet[Tab. 5]{Borjesson2018}.
+
+Travel time savings were mild---mostly because Gothenburg was not very congested in the first place. Results appear in Fig. \ref{fig:Gothenburg-travel-times}. Inner arterials are the highways circled in Fig. \ref{fig:Gothenburg-map}; outer arterials are the uncircled highways outside the zone; bypasses are highways further out than the map shows. As the figure shows, congestion intitially was much lighter than it was in Stockholm, and there very little change in traffic within the cordon. The dramatic reduction on the inner arterials is attenuated by the fact that travel time on these links had only been about 5 minutes during the morning peak. 
+
+Surveys conducted before and after charging show that commuters switched to public transport, while discretionary travelers traveled less frequently or switched destinations. Accounting for external factors, the charge is estimated to have raised public transport ridership by about 4.5-6.5\% \citep{Borjesson2015}.
 
 \begin{figure}[ht]
 \includegraphics[width=0.55\columnwidth]{../img/gburg-travel-times.png}
 
-\caption{Gothenburg 7-8AM. Increase in travel times on selected categories of road relative to free-flow speeds, before (Oct 2012) and after (Oct 2013) the Congestion Tax. \citep{Borjesson2015} \label{fig:Gothenburg-travel-times}}
+\caption{Gothenburg 6-10 A.M. Increase in travel times on selected categories of road relative to free-flow speeds, before (Oct 2012) and after (Oct 2013) the Congestion Tax. \citep{Borjesson2015} \label{fig:Gothenburg-travel-times}}
 
 \end{figure}
 
+Like Stockholm, Gothenburg confirms Theme II: the 2015 toll increase resulted in no real change in entries during the peak hours, although the increase was not as substantial as in Stockholm \citep[p. 43, Tab. 6]{Borjesson2018}.
+
 \subsection{Finances}
 
-The GCT cost only 41 million EUR to implement if we count only those costs specific to Gothenburg \citep[p. 40]{Borjesson2018}. However, in 2012, Sweden spent 35 million EUR to replace the IT system for the Stockholm Congestion Tax with a national system that Gothenburg and two bridges elsewhere in Sweden could also use; arguably some part of this expense could be attributed to Gothenburg, too. 
+The GCT cost only 410 MSEK to implement if we count only those costs specific to Gothenburg \citep[p. 40]{Borjesson2018}. However, in 2012, Sweden spent 350 MSEK to replace the IT system for the Stockholm Congestion Tax with a national system that Gothenburg and two bridges elsewhere in Sweden could also use; arguably some part of this expense could be attributed to Gothenburg. 
 
-In the first year, 2013, the GCT generated only 72 million EUR in charges and about 8 million EUR in penalties, instead of the 93 million EUR forecast in 2009 \citep[pp. 142-143]{Borjesson2015}. \citet{Borjesson2015} blame economic factors (fuel prices, recession) and the fact that 45\% of trips took advantage of the ``multi-passage'' rule rather than the 30\% analysts predicted. After the toll increase in 2015, revenues jumped from 80 million EUR in 2014 to 99.5 million EUR in 2015, while operating costs have stayed around 13 million EUR per year \citep[table 3]{Borjesson2018}.
-
-% Operating costs have been low: 
-
-% In any case, the expense compares very favorably to implementation costs in Singapore (XXX), London (XXX) and Stockholm (XXX), which illustrates the value of experience.
+In the first year, 2013, the GCT earned 720 MSEK in charges and about 8 MSEK in penalties---13 million short of the amount that had been forecast forecast in 2009 \citep[pp. 142-143]{Borjesson2015}. \citet{Borjesson2015} blame the shortfall on economic factors (fuel prices, recession) and the fact that 45\% of trips into the cordon during charging hours took advantage of the ``multi-passage'' rule---rather than the 30\% analysts predicted. The shortfall is what led authorities to raise the toll in 2015, since---unlike in London where revenues are hypothecated to transit in a vague way---the Western Swedish Agreement commits Gothenburg to pay for specific projects. The increase led revenues to jump from 80 MSEK in 2014 to 99.5 million EUR in 2015. Operating costs have been around 130 MSEK per year and are declining \citep[table 3]{Borjesson2018}.
 
 
 
-
-
-
-
-
-
-% When the GCT was introduced, Sweden scrapped the 
-
-% In 2013 the Gothenburg Congestion Tax raised 846 million kr, of which 76 million kr came from tolls and 83.8 million kr from penalties \citep{TransportstyrelsenGburg2013}. This was short of the 930 million kr (\$103 million) forecast, largely because 45\% of traffic turned out to be exempt rather than the 30\% forecast \citep{Borjesson2015}.
-
-% Since Gothenburg's 
 
