@@ -1,10 +1,8 @@
-\section{London --- London Congestion Charge}\label{sec:london}
+\section{London Congestion Charge}\label{sec:london}
 
 \subsection{Implementation}
 
-Starting with the research described in \citet{Thomson1967a}, the idea of DCP in London became the topic of numerous government studies carried out until the 1990's. These are described in detail in \citet[Ch. 4]{Richards2006} and \citet[Ch. 4]{Gomez-Ibanez1994}. At each study's conclusion, authorities decided to table the matter for the time being, usually citing concerns with technology.
-
-Concrete steps towards a scheme finally began in 1997, when the UK's new Labour government called a referendum on the question of creating a Greater London Authority---a regional governing body over London's many boroughs---to be headed by an elected Mayor of London \citep[Ch. 6]{Richards2006}. In May 1998, this concept won the referendum by a large margin, although it was still up to Parliament to craft specific legislation to create the GLA.\footnote{See \citet[Sec. 7.2]{TfLFifth2007} for a concise list of developments leading up to implementation.} Several Labour policy papers suggested the new Mayor's powers would include enacting road pricing, and so in August 1998 the Government Office for London convened a team of experts, the Road Charging Options for London (ROCOL) Working Group, to study the matter one last time. Around the same time, the UK Treasury decided that it would permit revenues from pricing to be hypothecated to transportation---a break with the usual practice whereby all British government revenues are allocated by the government.  In 1999, Parliament passed the Greater London Authority Act \citep{Parliament1999}, which did give the Mayor road pricing powers, under the proviso that the first ten years of revenue go to transportation. 
+Concrete steps towards a scheme finally began in 1997, when the UK's new Labour government called a referendum on the question of creating a Greater London Authority---a regional governing body over London's many boroughs---to be headed by an elected Mayor of London.\footnote{Except where indicated, information in this section comes from \citet[Ch. 6]{Richards2006}. See also \citet[Sec. 7.2]{TfLFifth2007} for a concise list of steps to implementation.} In May 1998, this concept won the referendum by a large margin, although it was still up to Parliament to craft specific legislation to create the GLA. Several Labour policy papers suggested the new Mayor's powers would include enacting road pricing, and so in August 1998 the Government Office for London convened a team of experts, the Road Charging Options for London (ROCOL) Working Group, to study the matter one last time. Around the same time, the UK Treasury decided that it would permit revenues from pricing to be hypothecated to transportation---a break with the usual practice whereby all British government revenues are allocated by the government. In 1999, Parliament passed the Greater London Authority Act \citep{Parliament1999}, which created the Mayor position and did give the role road pricing powers, under the proviso that the first ten years of revenue be hypothecated to transportation. 
 
 In March 2000 ROCOL published its report, \citet{ROCOL2000}, and in May 2000, the first mayoral election went to Ken Livingstone, who had included DCP in his election manifesto (campaign platform). After being briefed on \citet{ROCOL2000}, Livingstone decided to move forward with enforcement by Automatic Number Plate Recognition (ANPR) cameras---a technology perfected in the 1990s. ROCOL had also considered paper licenses and tag-and-beacon systems, but cautioned that the former were impractical and the latter would mean delaying the scheme beyond the Mayor's first term, since national authorities were still working on national standards for transponders. ANPR has the advantage that vehicles do not have to carry special equipment, and has been used in every DCP system except Singapore's.
 
@@ -12,14 +10,13 @@ After preparation and consultation with the public in which several features of 
 
 \subsection{Design}
 
-The LCC launched as a \pounds5 charge for unlimited travel between 7:00 AM and 6:30 PM within the 22 km$^{2}$ Congestion Charging Zone (CCZ) (the solid region in Figure \ref{fig:London-Congestion-Charging}). The zone is surrounded by the capacious, uncharged Inner Ring Road which allows drivers to avoid the zone. Uniquely, the LCC covers all travel within the zone---not just traversals of a cordon like the other schemes---as well as vehicles that are merely parked on the street. Therefore, enforcement requires ANPR cameras (over 500 at the launch) mounted on poles throughout the zone and along its boundaries, as well as cameras mounted on patrolling vans. The baseline payment method is as follows: if one uses public streets in the CCZ during charging hours, one has until midnight to pay by calling a number, SMS, a website, payment machines or in various stores. The LCC is turned off from December 25th to January 1st of every years, for Christmas and New Years.
+The LCC launched as a \pounds5 charge for unlimited travel between 7:00 AM and 6:30 PM within the 22 km$^{2}$ Congestion Charging Zone (CCZ) (the solid region in Fig. \ref{fig:London-Congestion-Charging}). The zone is surrounded by the capacious, uncharged Inner Ring Road which allows drivers to avoid the zone. Uniquely, the LCC covers all travel within the zone---not just traversals of a cordon like the other schemes---as well as vehicles that are merely parked on the street. Therefore, enforcement requires ANPR cameras (over 500 at the launch) mounted on poles throughout the zone and along its boundaries, as well as cameras mounted on patrolling vans. The baseline payment method is as follows: if one uses public streets in the CCZ during charging hours, one has until midnight to pay by calling a number, SMS, a website, payment machines or in various stores. The LCC is turned off from December 25th to January 1st of every years, for Christmas and New Years.
 
+The LCC has undergone a number of minor changes of which we will list only a few. The toll was raised from \pounds5 to \pounds8 in July 2005, \pounds10 in January 2011 and \pounds11.50 in June 2014. In 2007, the end of charging was moved up from 6:30 to 6:00 PM. Since June 2006, if one pays by midnight on the day after visiting the zone the penalty is small (\pounds 2.50). Since 2011, an Auto Pay option lets users have their accounts debited automatically, whereas before this was only available to businesses participating in the ``Fleet Scheme.''
 
-The LCC has undergone a number of minor changes of which we will list only a few. The toll was raised from \pounds5 to \pounds8 in July 2005, \pounds10 in January 2011 and \pounds11.50 in June 2014. In 2007, the end of charging was moved up from 6:30 to 6:00 PM. Since June 2006, if one pays by midnight on the day after visiting the zone the penalty is small (\pounds 2.50). Since 2011, an Auto Pay option lets users have their accounts debited automatically.
+The largest, albeit temporary, change to the LCC has been the ``Western Extension,'' a 19 km$^2$ addition to the original CCZ which is shown as the striped area in Fig. \ref{fig:London-Congestion-Charging}. After Livingstone was reelected in May 2004, he carried out a consultation with the public on the Extension \citep[Ch. 14]{Richards2006}. The result was soundly negative, but Livingstone chose to proceed anyway, and the Extension came into operation on February 19, 2007. When Boris Johnson defeated Livingstone in the 2008 mayoral election, he conducted another public consultation, \citet{TfL2008b}, on the  Extension. Results showed the public still very opposed, and so the Extension was scrapped on January 4, 2011.
 
-The largest, albeit temporary, change to the LCC has been the ``Western Extension,'' a 19 km$^2$ addition to the original CCZ which is shown as the striped area in Figure \ref{fig:London-Congestion-Charging}. After Livingstone was reelected in May 2004, he carried out a consultation with the public on the Extension \citep[Ch. 14]{Richards2006}. The result was soundly negative, but Livingstone chose to proceed anyway, and the Extension came into operation on February 19, 2007. When Boris Johnson defeated Livingstone in the 2008 mayoral election, he conducted another public consultation, \citet{TfL2008b}, on the  Extension. Results showed the public still very opposed, and so the Extension was scrapped on January 4, 2011.
-
-There are myriad exemptions and discounts.\footnote{See \citet[Table 1, p. 515]{Santos2005} for a tabulated list that is almost unchanged today.} Using Auto Pay earns a \pounds1 discount. Residents receive a 90\% discount. Motorcycles, buses, vehicles with 9+ seats, licensed taxis/minicabs, certain emergency and government vehicles, certain vehicles used for or by  disabled people, and certain vehicles with very low emissions are all completely exempt or eligible for a ``100\% discount,'' which, unlike exemption, requires registration and possibly a small fee. The difference between a taxi and minicab is that taxis (also called ``black cabs'') are special black-colored cars that can be hailed from the street, whereas minicabs (also called ``private hire vehicles'') are ordinary cars that can only execute pre-booked pickups. Below, minicabs and private cars are grouped together in statistics---even though the former are exempt---because they are visually indistinguishible from private cars.
+There are myriad exemptions and discounts. Using Auto Pay earns a \pounds1 discount. Residents receive a 90\% discount. Motorcycles, buses, vehicles with 9+ seats, licensed taxis/minicabs, certain emergency and government vehicles, certain vehicles used for or by  disabled people, and certain vehicles with very low emissions are all completely exempt or eligible for a ``100\% discount,'' which, unlike exemption, requires registration and possibly a small fee. The difference between a taxi and minicab is that taxis (also called ``black cabs'') are special black-colored cars that can be hailed from the street, whereas minicabs (also called ``private hire vehicles'') are ordinary cars that can only execute pre-booked pickups. Below, minicabs and private cars are grouped together in statistics---even though the former are exempt---because they are visually indistinguishible from private cars. Finally, travelers getting care at National Health Service facilities can be reimbursed for the charge.
 
 \begin{figure}[ht]
     \includegraphics[width=1\textwidth]{../img/london-congestion-charge.png}
@@ -28,7 +25,7 @@ There are myriad exemptions and discounts.\footnote{See \citet[Table 1, p. 515]{
 \end{figure}
 
 
-\subsection{Results}
+\subsection{Transportation impacts}
 
 The LCC is the most closely studied DCP system. Transport for London (TfL) collected data on traffic, travel times, business, transit use and other impacts of the Congestion Charge under the Impacts Monitoring Programme, described in \citet[Sec. 1]{TfLFirst2003}. Findings appear in annual reports from 2003 to 2008, after which more limited data can be found in the TfL's annual Travel in London Report.
 
@@ -58,43 +55,47 @@ Financially, the LCC has cost more to build and operate and generated, until rec
 
 \citet[p. 125]{ROCOL2000} predicted setup costs of \pounds30-50 million. In reality, TfL reported implementation costs of \pounds162 million \citep[p. 135]{TfLFifth2007}, but this number requires some context: about \pounds 100 million paid for traffic management measures, including projects for cyclists and pedestrians, bus priority, better signal timing and road improvements \citep[pp. 132-133,138]{Richards2006}. While the LCC may have been the impetus behind these projects, arguably they produced auxiliary own benefits or were to some degree optional. At the same time, this amount does not include the costs of additional public transit provision that went along with the scheme.
 
-As for the yearly budget, \citet{ROCOL2000} estimated annual revenues of \pounds 260-320 million (\pounds 230-270 million from charges and \pounds 30-40 million from penalties) and operating costs of \pounds 30-50 million. ROCOL's plan, however, did not include exemptions for residents or taxis/private hire vehicles; and it imposed a higher charge on delivery vans and trucks. Taking the changes and more realistic costs into account, \citet{TfL2002} projected net revenues of \pounds 130-150 million, not counting penalties.
+As for the yearly budget, \citet{ROCOL2000} estimated annual revenues of \pounds 260-320 million (\pounds 230-270 million from charges and \pounds 30-40 million from penalties) and operating costs of \pounds 30-50 million. ROCOL's plan, however, did not include exemptions for residents or taxis/private hire vehicles; and it imposed a higher charge on delivery vans and trucks. Taking the changes and more realistic costs into account, \citet{TfL2002} projected net revenues of \pounds 130-150 million, not counting penalties. In reality, operating costs have been much higher and revenues lower, as shown in Table \ref{tab:London-Congestion-Charge}. The Impacts Monitoring reports break down revenue allocation, showing the vast majority went to bus service, with smaller amounts for roadworks, safety, walking/cycling measures and other uses. Costs and revenues seem to have stabilized at around \pounds 90 and \pounds 250 million, respecitvely, leading to surpluses of around \pounds 160 million.
 
-In reality, operating costs were much higher and revenues lower, as shown in Table \ref{tab:London-Congestion-Charge}. Years 2008-2011 in Table \ref{tab:London-Congestion-Charge} are starred to highlight the years of the Western Extension---a time of higher costs and revenues. \citet[p. 186]{TfL2003b} attributed the shortfall in revenue, initially, to evasion, a greater-than-expected fall in chargeable traffic and the large share of exempt traffic. In 2007, TfL noted that only 44\% of entering vehicles with 4+ wheels were subject to full charge \citep[p. 12]{TfLExPost2007}. Almost as many, 38\%, were made by exempt taxis and private hire vehicles or discounted residents. 
+\citet[p. 186]{TfL2003b} attributed the shortfall in revenue, initially, to evasion, a greater-than-expected fall in chargeable traffic and the large share of exempt traffic. In 2007, TfL noted that only 44\% of entering vehicles with 4+ wheels were subject to full charge \citep[p. 12]{TfLExPost2007}. Almost as many, 38\%, were made by exempt taxis and private hire vehicles or discounted residents. 
 
 \begin{table}[ht]
-    \begin{tabular}{|c|c|c|c|c|c|}
+    \begin{tabular}{|c|c|c|c|c|c|c|}
         \hline 
-        year & tolls & penalties & revenue & cost & net revenue\tabularnewline
+        financial year & price & charges & penalties & revenue & cost & net revenue\tabularnewline
         \hline 
         \hline 
-        2003 & 18 & 1 & 19 & 17 & 2\tabularnewline
+        02/03 & 5 & 18 & 1 & 19 & 17 & 2\tabularnewline
         \hline 
-        2004 & 116 & 55 & 171 & 93 & 78\tabularnewline
+        03/04 & 5  & 116 & 55 & 171 & 93 & 78\tabularnewline
         \hline 
-        2005 & 117 & 75 & 192 & 90 & 102\tabularnewline
+        04/05 & 5 & 117 & 75 & 192 & 90 & 102\tabularnewline
         \hline 
-        2006 & 144 & 66 & 210 & 88 & 122\tabularnewline
+        05/06 & 5/8 & 144 & 66 & 210 & 88 & 122\tabularnewline
         \hline 
-        2007 & 158 & 55 & 213 & 90 & 123\tabularnewline
+        06/07 & 8 & 158 & 55 & 213 & 90 & 123\tabularnewline
         \hline 
-        2008{*} & - & - & 328 & 191 & 137\tabularnewline
+        07/08{*} & 8 & 195 & 73 & 268 & 131 & 137\tabularnewline
+        \hline
+        08/09* & 8 & - & - & 326 & 177 & 149\tabularnewline
         \hline 
-        2009{*} & - & - & 326 & 177 & 149\tabularnewline
+        09/10* & 8 & - & - & 313 & 154 & 158 \tabularnewline
         \hline 
-        2010{*} & - & - & 313 & 155 & 158\tabularnewline
+        10/11* & 8/10 & - & - & 287 & 113 & 174\tabularnewline
         \hline 
-        2011{*} & - & - & 287 & 113 & 174\tabularnewline
+        11/12 & 10 & - & - & 227 & 90 & 137\tabularnewline
         \hline 
-        2012 & - & - & 227 & 90 & 137\tabularnewline
+        12/13 & 10 &  - & - & 222 & 90 & 132\tabularnewline
         \hline 
-        2013 & - & - & 220 & 88 & 132\tabularnewline
+        13/14 & 10 & - & - & 235 & 85 & 149\tabularnewline
         \hline 
-        2014 & - & - & 235 & 85 & 149\tabularnewline
+        14/15 & 11.5 & - & - & 257 & 85 & 173\tabularnewline
         \hline 
-        2015 & - & - & 257 & 85 & 172\tabularnewline
+        15/16 & 11.5 & - & - & 258 & 90 & 168\tabularnewline
+        \hline 
+        16/17 & 11.5 & - & - & 250 & 86 & 164\tabularnewline
         \hline 
     \end{tabular}
     
-    \caption{London Congestion Charge costs and revenues. Years 2008-2011 are starred to show when the Wesern Extension was in place. 2003-2008 data from TfL's \emph{Congestion Charging Monitoring} reports. Later data from TfL's \emph{Travel in London} series. }\label{tab:London-Congestion-Charge}
+    \caption{London Congestion Charge costs and revenues. Starred years are those when the Western Extension was in force. The financial year runs from April 1st through March 31st. 2003-2008 data from TfL's \emph{Congestion Charging Monitoring} reports. Later data from TfL's Annual Reports \citep{TfL2018} }\label{tab:London-Congestion-Charge}
 \end{table}
